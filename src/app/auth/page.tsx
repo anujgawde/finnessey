@@ -4,7 +4,7 @@ import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-export default function Home() {
+export default function AuthPage() {
   const isRefreshFunctionCalled = useRef(false);
 
   const [currentMessages, setCurrentMessages] = useState<any[]>([]);
@@ -70,13 +70,10 @@ export default function Home() {
     }
   };
 
-  // TODO: Add financials in a prompt to set up the system prompt. Remove it from the backend
-  const fetchFinancials = async () => {};
-
   // Save Conversation before leaving the page:
   useEffect(() => {
     loadConversation();
-    fetchFinancials();
+
     const handleBeforeUnload = (event: any) => {
       // if (!isRefreshFunctionCalled.current) {
       // This function will be called right before the user leaves the page
