@@ -10,8 +10,8 @@ This frontend app relies on a **backend service** to manage APIs, database conne
 
 **Clone the Repository**
 
-    git clone <frontend-repo-url>
-    cd <frontend-repo-directory>
+    git clone https://github.com/anujgawde/finnessey
+    cd finnessey
 
 **Install Dependencies**
 Make sure you have Node.js installed, then run:
@@ -28,7 +28,7 @@ Start the backend server, followed by the frontend:
   `npm run start:dev`
 
 - Run Frontend:
-  `npm run start`
+  `npm run dev`
 
 **Start Using the Application**  
 Once both services are running, navigate to the frontend application in your browser and start interacting with your financial data!
