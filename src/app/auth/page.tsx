@@ -43,8 +43,6 @@ export default function AuthPage() {
         data
       );
 
-      console.log(res.data);
-
       const updatedWithResponse = [
         ...updatedMessages,
         { role: "assistant", content: res.data.choices[0].message.content },
@@ -64,7 +62,6 @@ export default function AuthPage() {
         "http://localhost:8080/perplexity/load-conversation"
       );
       setConversation(res.data);
-      console.log(res.data);
     } catch (error) {
       console.error("Error sending message", error);
     }
